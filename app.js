@@ -12,6 +12,7 @@ import globalRouter from "./routers/globalRouter";
 const app = express();
 
 app.use(helmet());
+// app.set("views", path.join(__dirname, "views"));
 app.set("view engine", "pug");
 app.use(cookieParser());
 app.use(bodyParser.json());

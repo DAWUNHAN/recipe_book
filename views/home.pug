@@ -2,6 +2,6 @@ extends layouts/main
 
 block content
     .recipes
-        each item in recipes
-            h1= item.tile
-            p= item.description
+        h3=recipes.title
+        img(src=recipes.image)
+            
