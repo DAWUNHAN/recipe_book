@@ -1,7 +1,8 @@
 extends layouts/main
+include mixins/recipeBlock
 
 block content
     .recipes
-        h3=recipes.title
-        img(src=recipes.image)
-            
+        each item in recipes
+            p=item.title
+            img(src=item.image)
