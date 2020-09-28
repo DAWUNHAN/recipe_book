@@ -2,7 +2,8 @@ header.header
     .header__wrapper
         .header__column
             a(href=routes.home)
-                i.fas.fa-utensils RecipeBook
+                i.fas.fa-utensils 
+                span.highlight#logoName RecipeBook
         .header__column
             form(action=routes.search, method="get")
                 input(type="text", placeholder="Search incredible recipes", name="term")

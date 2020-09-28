@@ -7,7 +7,8 @@ block content
                 .card-image
                     a(href=item.sourceUrl, target="_blank")
                         img(src=`https://spoonacular.com/recipeImages/${item.image}`)
-                span.card-title=item.title
-                .card-content
-                    div(class="random-spoonacularScore") Spoonacular Score 
-                        p=item.spoonacularScore
+                .recipes-content
+                    span.card-title.highlight=item.title
+                    .card-content
+                        div.random-spoonacularScore Spoonacular Score 
+                            p=item.spoonacularScore

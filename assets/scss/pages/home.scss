@@ -6,7 +6,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url("/static/honeycomb.png");
+  background-image: url("https://github.com/DAWUNHAN/recipe_book/blob/master/public/img/honeycomb.png?raw=true");
 }
 #recipes-box {
   width: 100vw;
@@ -19,4 +19,7 @@
 .recipes-content {
   margin: 1em;
   text-align: center;
+}
+.random-spoonacularScore p {
+  font-size: 3rem;
 }
