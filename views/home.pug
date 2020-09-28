@@ -2,7 +2,14 @@ extends layouts/main
 include mixins/recipeBlock
 
 block content
-    .main-banner
+    .scroll-section#scroll-section-0
+        h1 Let's cook tonight
+        div.sticky-elem.sticky-elem-canvas
+            canvas#video-canvas-0(width='1920' height='1080')
+        .sticky-elem.main-message.a Are you ready? a
+        .sticky-elem.main-message.b Are you ready? b
+        .sticky-elem.main-message.c Are you ready? c
+        .sticky-elem.main-message.d Are you ready? d
     .random-recipes-wrapper
         each item in recipes
             .card#recipes-box
