@@ -7,7 +7,7 @@ const key = process.env.RECIPE_API_KEY;
 
 export const home = async (req, res) => {
   try {
-    const url = `https://api.spoonacular.com/recipes/random?number=2&apiKey=${key}`;
+    const url = `https://api.spoonacular.com/recipes/random?number=3&apiKey=${key}`;
     const response = await fetch(url);
     const data = await response.json();
     let recipes = data.recipes;
@@ -25,7 +25,7 @@ export const search = async (req, res) => {
     query: { term: searchingBy },
   } = req;
   try {
-    const url = `https://api.spoonacular.com/recipes/search?query=${searchingBy}&number=2&apiKey=${key}`;
+    const url = `https://api.spoonacular.com/recipes/search?query=${searchingBy}&number=3&apiKey=${key}`;
     const response = await fetch(url);
     const data = await response.json();
     let searchResult = data.results;

@@ -2,7 +2,18 @@ extends layouts/main
 include mixins/recipeBlock
 
 block content
-    .recipes
+    .main-banner
+    .random-recipes-wrapper
         each item in recipes
-            p=item.title
-            img(src=item.image)
+            .card#recipes-box
+                .card-image
+                    a(href=item.sourceUrl, target="_blank")
+                        img(src=item.image)
+                .recipes-content
+                    span.card-title=item.title
+                    .card-content
+                        div(class="random-spoonacularScore") Spoonacular Score 
+                            p=item.spoonacularScore
+
+
+

@@ -1,13 +1,14 @@
 header.header
-    .header__column
-        a(href=routes.home)
-            i.fas.fa-utensils
-    .header__column
-        form(action=routes.search, method="get")
-            input(type="text", placeholder="Search incredible recipes", name="term")
-    .header__column
-        ul
-            li
-                a(href=routes.join) Join
-            li
-                a(href=routes.login) Log In
+    .header__wrapper
+        .header__column
+            a(href=routes.home)
+                i.fas.fa-utensils RecipeBook
+        .header__column
+            form(action=routes.search, method="get")
+                input(type="text", placeholder="Search incredible recipes", name="term")
+        .header__column
+            ul
+                li
+                    a(href=routes.join) Join
+                li
+                    a(href=routes.login) Log In

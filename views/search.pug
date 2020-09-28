@@ -1,7 +1,13 @@
 extends layouts/main
 
 block content
-    .search__header
+    .random-recipes-wrapper
         each item in searchResult
-            p=item.title
-            img(src=`https://spoonacular.com/recipeImages/${item.image}`)
+            .card#recipes-box
+                .card-image
+                    a(href=item.sourceUrl, target="_blank")
+                        img(src=`https://spoonacular.com/recipeImages/${item.image}`)
+                span.card-title=item.title
+                .card-content
+                    div(class="random-spoonacularScore") Spoonacular Score 
+                        p=item.spoonacularScore

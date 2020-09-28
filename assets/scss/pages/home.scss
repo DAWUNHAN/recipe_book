@@ -1,0 +1,22 @@
+// .main-banner {
+//   background-image: url("/static/blackboard.jpg");
+// }
+.random-recipes-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("/static/honeycomb.png");
+}
+#recipes-box {
+  width: 100vw;
+  height: 100vw;
+  max-width: 432px;
+  max-height: 432px;
+  overflow: hidden;
+  margin: 0px;
+}
+.recipes-content {
+  margin: 1em;
+  text-align: center;
+}

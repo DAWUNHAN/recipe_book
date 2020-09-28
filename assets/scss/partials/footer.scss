@@ -1,0 +1,30 @@
+.footer {
+  color: #8c8c8d;
+  background: #f2f2f2;
+  margin-top: 10vh;
+  padding: 70px 40px;
+  border-top: 1px solid #e7e8e9;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.footer a {
+  color: rgb(29, 29, 31);
+  text-decoration: none;
+}
+.footer a:hover {
+  color: rgb(29, 29, 31);
+  text-decoration: none;
+}
+.footer-grid {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+.footer-grid h2 {
+  color: black;
+}
+i.fas.fa-check-circle {
+  color: #001f54;
+}

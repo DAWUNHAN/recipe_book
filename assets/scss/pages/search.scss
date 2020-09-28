@@ -1,0 +1,12 @@
+.recipes-wrapper {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  justify-items: center;
+  background-color: $gray;
+}
+.recipes-wrapper img {
+  width: 100%;
+  box-shadow: 0px 0px 15px 0px rgba(150, 150, 150, 0.64);
+}
