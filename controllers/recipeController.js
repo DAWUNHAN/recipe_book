@@ -13,7 +13,19 @@ export const home = async (req, res) => {
     let recipes = data.recipes;
     console.log("good");
     // console.log(recipes);
-    res.render("home", { pageTitle: "Home", recipes });
+
+    const imageIcon = ["Breakfast", "Burger", "Korean", "Chinese", "Dessert"];
+    let category = [];
+
+    for (let i in imageIcon) {
+      let arrayImage = {
+        urlName: imageIcon[i],
+        urlImage: `https://raw.githubusercontent.com/DAWUNHAN/recipe_book/master/public/img/${imageIcon[i]}.png`,
+      };
+      category.push(arrayImage);
+    }
+    console.log(category);
+    res.render("home", { pageTitle: "Home", recipes, category });
   } catch (error) {
     console.log(error);
     res.render("home", { pageTitle: "Home", recipes });

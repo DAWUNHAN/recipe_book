@@ -20,3 +20,18 @@
 .random-spoonacularScore p {
   font-size: 3rem;
 }
+.recipe-category {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+}
+.category-image {
+  width: 15%;
+}
+.category-image img {
+  width: 30%;
+  display: block;
+  margin: 0 auto;
+}

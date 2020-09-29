@@ -13,3 +13,8 @@ block content
                     .card-content
                         div.random-spoonacularScore Spoonacular Score 
                             p=item.spoonacularScore
+    .recipe-category
+        each item in category
+            .category-image
+                img(src=item.urlImage)
+                p=item.urlName
